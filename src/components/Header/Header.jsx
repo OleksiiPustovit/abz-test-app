@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import { Button } from "../Button/Button";
+import logo from "../../images/logo.png";
 
 export const Header = () => {
   return (
@@ -11,9 +12,9 @@ export const Header = () => {
             className="header__logo-link" 
             href="/"
           >
-            <img 
+            <img
               className="header__logo--img"
-              src="./logo.png" 
+              src={logo} 
               alt="logo" 
             />
           </a>
