@@ -1,0 +1,167 @@
+@import "../../styles/main.scss";
+
+.post-section {
+  text-align: center;
+  &__title {
+    font-size: $fs-40;
+    line-height: $lh-40;
+    font-weight: $fw-400;
+    font-family: $ff-Nunito;
+    padding: $padding-16;
+    margin-bottom: $mb-50;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 380px;
+  padding-bottom: $padding-100;
+
+  &__error {
+    color: $color-error;
+    font-size: $fs-16;
+    line-height: $lh-26;
+    font-weight: $fw-400;
+    font-family: $ff-Nunito;
+    padding: $padding-16;
+  }
+ 
+  &__input {
+    width: $input-width-phone;
+    height: $input-height;
+    border-radius: $input-border-radius;
+    background-color: transparent;
+    border: 1px solid $input-border-color;
+    padding: $padding-16;
+    font-size: $fs-16;
+    line-height: $lh-26;
+    font-weight: $fw-400;
+    font-family: $ff-Nunito;
+    color: $color-text-gray;
+
+    &-small {
+      display: flex;
+      align-items: flex-start;
+      color: $color-text-gray;
+      margin-left: 16px;
+    }
+
+    @include pad {
+      width: $input-width;
+    }
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $radio-gap;
+    margin: 0 auto;
+    width: $input-width-phone;
+
+    font-family: $ff-Nunito;
+    font-size: $fs-16;
+    line-height: $lh-26;
+    font-weight: $fw-400;
+    
+    @include pad {
+      width: $input-width;
+    }
+  }
+
+  &__radio {
+    width: $radio-width;
+    height: $radio-height;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border: 2px solid $color-grey;
+    border-radius: 50%;
+    transition: 0.2s all linear;
+    outline: none;
+  
+    position: relative;
+
+    &:checked {
+      border: 1px solid $color-radio;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $color-radio;
+      }
+    }
+
+    &-text {
+      padding-left: $padding-17;
+      font-family: $ff-Nunito;
+      font-size: $fs-16;
+      line-height: $lh-26;
+      font-weight: $fw-400;
+      }
+      &-label {
+        display: flex;
+        align-items: center;
+      }
+    } 
+
+  &__label{
+    border: 1px solid $color-grey;
+    display: inline-block;
+    border-radius: $input-border-radius;
+    width: $input-width-phone;
+    height: $input-height;
+    cursor: pointer;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: $input-gap;
+
+    font-family: $ff-Nunito;
+    font-size: $fs-16;
+    line-height: $lh-26;
+    font-weight: $fw-400;
+    color: $color-text-gray;
+
+
+    &::after {
+      content: "";
+    }
+    @include pad {
+      width: $input-width;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: $color-text-black;
+      height: 100%;
+      width: 83px;
+      border: 1px solid $color-black;
+      border-top-left-radius: $input-border-radius;
+      border-bottom-left-radius: $input-border-radius;
+
+    }
+  }
+
+  &__file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}

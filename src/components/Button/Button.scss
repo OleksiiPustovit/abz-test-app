@@ -1,0 +1,28 @@
+@import "../../styles/main.scss";
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: $button-border-radius;
+  background-color: $color-button-primary;
+  color: $color-text-black;
+  font-size: $fs-16;
+  font-weight: $fw-400;
+  font-family: $ff-Nunito;
+  text-decoration: none;
+  padding: $padding-button;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  min-width: 100px;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &__disabled {
+    background-color: $color-button-disabled;
+    color: $color-text-white;
+    cursor: not-allowed;
+  }
+}
