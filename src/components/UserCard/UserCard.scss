@@ -3,7 +3,8 @@
 .user {
   display: flex;
   height: $card-height;
-  width: $card-phone-width;
+  width: 100%;
+  max-width: $card-phone-width;
   border-radius: 10px;
 
   background-color: $color-white;
