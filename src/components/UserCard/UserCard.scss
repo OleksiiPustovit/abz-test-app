@@ -1,0 +1,46 @@
+@import "../../styles/main.scss";
+
+.user {
+  display: flex;
+  height: $card-height;
+  width: $card-phone-width;
+  border-radius: 10px;
+
+  background-color: $color-white;
+
+  @include pad {
+    width: $card-width;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+
+    font-weight: $fw-400;
+    font-family: $ff-Nunito;
+    font-size: $fs-16;
+    line-height: $lh-26;
+  }
+
+  &__photo {
+    width: $card-photo-width;
+    height: $card-photo-height;
+    border-radius: $card-photo-radius;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+}

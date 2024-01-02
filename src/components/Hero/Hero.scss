@@ -1,0 +1,45 @@
+@import "../../styles/main.scss";
+
+.hero {
+  background-image: url("../../images/background.png");
+
+  max-width: $max-width;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  margin-bottom: 140px;
+
+  &__title {
+    font-size: $fs-40;
+    font-weight: $fw-400;
+    line-height: $lh-40;
+    font-family: $ff-Nunito;
+    color: $color-text-white;
+    
+
+    margin-bottom: 21px;
+  }
+
+  &__subtitle {
+    font-size: $fs-16;
+    line-height: $lh-26;
+    font-weight: $fw-400;
+    font-family: $ff-Nunito;
+    color: $color-text-white;
+
+    margin-bottom: 32px;
+  }
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}

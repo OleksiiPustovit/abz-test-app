@@ -1,0 +1,28 @@
+@import "../../styles/main.scss";
+
+.header {
+  background-color: $color-white;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: $max-width;
+  }
+
+  &__logo {
+    padding: 17px;
+
+    &--img {
+      width: 107px;
+      height: 26px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 16px;
+  }
+}
