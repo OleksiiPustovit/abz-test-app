@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/abz-test-app/static/css/main.973be8c8.css",
-    "main.js": "/abz-test-app/static/js/main.53e2e0ab.js",
+    "main.js": "/abz-test-app/static/js/main.8186db02.js",
     "static/media/background.png": "/abz-test-app/static/media/background.bc862e1edd97e2bc8228.png",
     "index.html": "/abz-test-app/index.html",
     "main.973be8c8.css.map": "/abz-test-app/static/css/main.973be8c8.css.map",
-    "main.53e2e0ab.js.map": "/abz-test-app/static/js/main.53e2e0ab.js.map"
+    "main.8186db02.js.map": "/abz-test-app/static/js/main.8186db02.js.map"
   },
   "entrypoints": [
     "static/css/main.973be8c8.css",
-    "static/js/main.53e2e0ab.js"
+    "static/js/main.8186db02.js"
   ]
 }
